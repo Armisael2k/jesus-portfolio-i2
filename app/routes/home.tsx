@@ -3,6 +3,8 @@ import Topbar from "@/components/topbar";
 import Presentation from "@/components/home/presentation";
 import Actions from "@/components/home/actions";
 import SocialLinks from "@/components/home/social-links";
+import Career from "@/components/home/career";
+import TechStack from "@/components/home/techstack";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -13,14 +15,19 @@ export function meta({ }: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <main className="mocha bg-ctp-base min-h-screen">
+    <main className="mocha bg-ctp-base min-h-screen h-full">
       <Topbar />
-      <div className="container mx-auto my-20">
-        <Presentation />
-        <SocialLinks />
-        <Actions />
+      <div className="max-w-5xl mx-auto pt-16 pb-20">
+        <div className="flex justify-between">
+          <div>
+            <Presentation />
+            <SocialLinks />
+            <Actions />
+          </div>
+          <TechStack />
+        </div>
+        <Career />
       </div>
     </main>
   );
 }
-
