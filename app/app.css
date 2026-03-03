@@ -13,9 +13,18 @@ body {
   outline-offset: 2px;
 }
 
+
+.bg-topbar {
+  mask: linear-gradient(black, black, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
 @theme {
-  --font-calistoga: "Calistoga", sans-serif;
-  --font-inter: "Inter", sans-serif;
+  --font-calistoga: "Calistoga",
+    sans-serif;
+  --font-inter: "Inter",
+    sans-serif;
 
   --animate-console-pulse: console-pulse 1.5s ease-in-out infinite;
 
