@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SocialLink } from "./social-link";
-import Divider from "./divider";
+import { SocialLink } from "@/components/ui/social-link";
+import Divider from "@/components/ui/divider";
 
 export default function SocialLinks() {
   return (
@@ -15,4 +15,3 @@ export default function SocialLinks() {
     </div>
   );
 }
-

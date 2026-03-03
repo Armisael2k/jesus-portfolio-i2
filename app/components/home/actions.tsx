@@ -1,4 +1,4 @@
-import Button from "./button";
+import Button from "@/components/ui/button";
 import { DocumentArrowDownIcon, EnvelopeIcon, Square3Stack3DIcon } from "@heroicons/react/24/outline";
 
 export default function Actions() {

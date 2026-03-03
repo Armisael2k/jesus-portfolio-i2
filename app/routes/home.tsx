@@ -1,8 +1,8 @@
 import type { Route } from "./+types/home";
 import Topbar from "@/components/topbar";
-import Presentation from "@/components/presentation";
-import Actions from "@/components/actions";
-import SocialLinks from "@/components/social-links";
+import Presentation from "@/components/home/presentation";
+import Actions from "@/components/home/actions";
+import SocialLinks from "@/components/home/social-links";
 
 export function meta({ }: Route.MetaArgs) {
   return [
