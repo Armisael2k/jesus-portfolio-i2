@@ -1,16 +1,17 @@
 import Button from "@/components/ui/button";
-import { DocumentArrowDownIcon, EnvelopeIcon, Square3Stack3DIcon } from "@heroicons/react/24/outline";
+import { HiOutlineSquare3Stack3D, HiOutlineDocumentArrowDown, HiOutlineEnvelope } from "react-icons/hi2";
+
 
 export default function Actions() {
   return (
     <div className="flex gap-4 mt-7">
-      <Button variant="filled" color="red" rightIcon={<Square3Stack3DIcon className="size-5" />}>
+      <Button variant="filled" color="red" rightIcon={<HiOutlineSquare3Stack3D className="size-5" />}>
         View Projects
       </Button>
-      <Button variant="outlined" color="default" rightIcon={<DocumentArrowDownIcon className="size-5" />}>
+      <Button variant="outlined" color="default" rightIcon={<HiOutlineDocumentArrowDown className="size-5" />}>
         Download CV
       </Button>
-      <Button variant="outlined" color="default" rightIcon={<EnvelopeIcon className="size-5" />}>
+      <Button variant="outlined" color="default" rightIcon={<HiOutlineEnvelope className="size-5" />}>
         Contact Me
       </Button>
     </div>
