@@ -37,7 +37,7 @@ export default function Button({
     <button
       className={cn(
         colorMap[color][variant],
-        "inline-flex items-center gap-2 rounded-xl hover:scale-[102%] transition-all ease-in-out duration-300 cursor-pointer px-4 py-2",
+        "inline-flex items-center justify-center gap-2 rounded-xl hover:scale-[102%] transition-all ease-in-out duration-300 cursor-pointer px-4 py-2",
         className
       )}
       {...props}
