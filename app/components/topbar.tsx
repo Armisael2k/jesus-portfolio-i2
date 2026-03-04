@@ -2,7 +2,7 @@ import { Link } from "@/components/ui/link";
 
 export default function Topbar() {
   return (
-    <div className="bg-topbar pt-5 pb-10 sticky top-0 mx-auto w-full">
+    <div className="bg-topbar pt-5 pb-10 sticky top-0 mx-auto w-full z-10">
       <div className="container mx-auto flex justify-between">
         <div className="flex items-stretch gap-1">
           <div className="text-ctp-red-500  text-2xl leading-none">JL</div>
