@@ -2,6 +2,7 @@
 
 @import "tailwindcss";
 @plugin "@toolwind/corner-shape";
+@plugin "./plugins/bg-styled.ts";
 @import "@catppuccin/tailwindcss/mocha.css";
 
 body {

@@ -2,6 +2,7 @@ import Topbar from "@/components/topbar";
 import type { Route } from "./+types/projects";
 import Title from "@/components/projects/title";
 import Project from "@/components/projects/project";
+import Background from "@/components/background";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -12,9 +13,10 @@ export function meta({ }: Route.MetaArgs) {
 
 export default function Projects() {
   return (
-    <main className="mocha bg-ctp-base min-h-screen h-full">
+    <main className="relative mocha bg-ctp-base min-h-screen h-full">
+      <Background />
       <Topbar />
-      <div className="max-w-5xl mx-auto pt-16 pb-20">
+      <div className="max-w-5xl mx-auto pt-16 pb-20 relative">
         <Title />
         <div className="grid grid-cols-2 gap-4">
           <Project
