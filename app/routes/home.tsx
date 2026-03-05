@@ -4,8 +4,9 @@ import Presentation from "@/components/home/presentation";
 import Actions from "@/components/home/actions";
 import SocialLinks from "@/components/home/social-links";
 import Career from "@/components/home/career";
-import TechStack from "~/components/home/tech-stack";
+import TechStack from "@/components/home/tech-stack";
 import Background from "@/components/background";
+import Footer from "@/components/footer";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -30,6 +31,7 @@ export default function Home() {
         </div>
         <Career />
       </div>
+      <Footer />
     </main>
   );
 }

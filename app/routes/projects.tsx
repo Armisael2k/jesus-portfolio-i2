@@ -1,8 +1,9 @@
 import Topbar from "@/components/topbar";
 import type { Route } from "./+types/projects";
-import Title from "@/components/projects/title";
+import Title from "@/components/ui/title";
 import Project from "@/components/projects/project";
 import Background from "@/components/background";
+import Footer from "@/components/footer";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -17,7 +18,7 @@ export default function Projects() {
       <Background />
       <Topbar />
       <div className="max-w-5xl mx-auto pt-16 pb-20 relative">
-        <Title />
+        <Title title="Projects" />
         <div className="grid grid-cols-2 gap-4">
           <Project
             title="MES Center"
@@ -49,6 +50,7 @@ export default function Projects() {
           />
         </div>
       </div>
+      <Footer />
     </main>
   );
 }

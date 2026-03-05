@@ -11,7 +11,7 @@ export default function Topbar() {
         <div className="text-ctp-text flex gap-18">
           <Link href="/">home</Link>
           <Link href="/projects">projects</Link>
-          <Link href="/contact">contact</Link>
+          <Link href="mailto:chuylopez755@gmail.com">contact</Link>
         </div>
       </div>
     </div>
