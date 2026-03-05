@@ -18,7 +18,7 @@ export function Tab({
 }: TabProps) {
   return (
     <div className={cn("mt-14", className)} {...props}>
-      <div className="flex items-center border border-ctp-surface0 p-2 rounded-xl">
+      <div className="flex items-center border border-ctp-mantle p-2 rounded-xl bg-ctp-base shadow-xl">
         {tabs.map((tab) => (
           <button
             key={tab}
@@ -26,7 +26,7 @@ export function Tab({
             className={cn(
               "px-4 py-2 text-ctp-text flex-1 text-center rounded-xl transition-colors duration-200",
               activeTab === tab
-                ? "bg-ctp-surface0"
+                ? "bg-ctp-mantle"
                 : "cursor-pointer"
             )}
           >
@@ -34,7 +34,7 @@ export function Tab({
           </button>
         ))}
       </div>
-      <div className="border border-ctp-surface0 p-2 rounded-xl mt-2">
+      <div className="border border-ctp-mantle p-2 rounded-xl mt-2 bg-ctp-base shadow-xl">
         {children}
       </div>
     </div>

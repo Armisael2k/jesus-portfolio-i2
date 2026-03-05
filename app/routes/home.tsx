@@ -4,7 +4,7 @@ import Presentation from "@/components/home/presentation";
 import Actions from "@/components/home/actions";
 import SocialLinks from "@/components/home/social-links";
 import Career from "@/components/home/career";
-import TechStack from "@/components/home/techstack";
+import TechStack from "~/components/home/tech-stack";
 import Background from "@/components/background";
 
 export function meta({ }: Route.MetaArgs) {

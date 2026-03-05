@@ -8,10 +8,10 @@ export default function Actions() {
       <Button variant="filled" color="red" rightIcon={<HiOutlineSquare3Stack3D className="size-5" />}>
         View Projects
       </Button>
-      <Button variant="outlined" color="default" rightIcon={<HiOutlineDocumentArrowDown className="size-5" />}>
+      <Button variant="filled" color="default" rightIcon={<HiOutlineDocumentArrowDown className="size-5" />}>
         Download CV
       </Button>
-      <Button variant="outlined" color="default" rightIcon={<HiOutlineEnvelope className="size-5" />}>
+      <Button variant="filled" color="default" rightIcon={<HiOutlineEnvelope className="size-5" />}>
         Contact Me
       </Button>
     </div>

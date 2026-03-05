@@ -1,7 +1,7 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 import { cn } from "@/utils/cn";
 
-type ButtonVariant = "outlined" | "filled";
+type ButtonVariant = "outlined" | "filled" | "shimmer";
 type ButtonColor = "red" | "default";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -16,11 +16,15 @@ const colorMap: Record<ButtonColor, Record<ButtonVariant, string>> = {
     filled: "bg-ctp-red hover:bg-ctp-red/80 text-black",
     outlined:
       "border text-ctp-red border-ctp-red hover:border-ctp-red/70 hover:text-ctp-red/70",
+    shimmer:
+      "text-ctp-red animate-shimmer bg-[linear-gradient(110deg,var(--catppuccin-color-mantle),45%,var(--catppuccin-color-surface0),55%,var(--catppuccin-color-mantle))] hover:bg-[linear-gradient(110deg,var(--catppuccin-color-surface0),45%,var(--catppuccin-color-surface1),55%,var(--catppuccin-color-surface0))] bg-[length:200%_100%] border border-ctp-red-700",
   },
   default: {
-    filled: "bg-ctp-subtext0 hover:bg-ctp-subtext0/80 text-black",
+    filled: "bg-ctp-mantle hover:bg-ctp-mantle/80 text-ctp-text border border-ctp-surface2",
     outlined:
       "border text-ctp-subtext0 border-ctp-subtext0 hover:border-ctp-red hover:text-ctp-red",
+    shimmer:
+      "text-ctp-text animate-shimmer bg-[linear-gradient(110deg,var(--catppuccin-color-mantle),45%,var(--catppuccin-color-surface0),55%,var(--catppuccin-color-mantle))] hover:bg-[linear-gradient(110deg,var(--catppuccin-color-surface0),45%,var(--catppuccin-color-surface1),55%,var(--catppuccin-color-surface0))] bg-[length:200%_100%] border border-ctp-surface2",
   },
 };
 
