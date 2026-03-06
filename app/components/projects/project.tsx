@@ -15,7 +15,7 @@ export default function Project({ title, description, image, tags, url }: Projec
     <div className="rounded-xl bg-ctp-crust p-6">
       <a href={url} className="block overflow-hidden rounded-xl cursor-pointer">
         <img
-          className="w-full object-cover hover:scale-110 transition-transform duration-700"
+          className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
           src={image}
           alt={title}
         />

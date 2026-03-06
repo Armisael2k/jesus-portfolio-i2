@@ -25,28 +25,28 @@ export default function Projects() {
             description="A manufacturing execution system for small to medium-sized businesses."
             image="https://img.freepik.com/premium-psd/laptop-mockup-displaying-website-interface-with-floating-rocks_176048-1224.jpg?w=2000"
             tags={["C#", "ASP.NET", "Oracle", "MongoDB", "React"]}
-            url="https://github.com/jesusleal1999/MESCenter"
+            url="/projects/dummy"
           />
           <Project
             title="MES Center"
             description="A manufacturing execution system for small to medium-sized businesses."
             image="https://img.freepik.com/premium-psd/laptop-mockup-with-stones_176048-1230.jpg?w=2000"
             tags={["C#", "ASP.NET", "Oracle", "MongoDB", "React"]}
-            url="https://github.com/jesusleal1999/MESCenter"
+            url="/projects/dummy"
           />
           <Project
             title="MES Center"
             description="A manufacturing execution system for small to medium-sized businesses."
             image="https://img.freepik.com/premium-psd/laptop-mockup-with-website-interface-dark-background_176048-1229.jpg?w=1060"
             tags={["C#", "ASP.NET", "Oracle", "MongoDB", "React"]}
-            url="https://github.com/jesusleal1999/MESCenter"
+            url="/projects/dummy"
           />
           <Project
             title="MES Center"
             description="A manufacturing execution system for small to medium-sized businesses."
             image="https://img.freepik.com/premium-psd/laptop-mockup-floating-stone_176048-1237.jpg?w=2000"
             tags={["C#", "ASP.NET", "Oracle", "MongoDB", "React"]}
-            url="https://github.com/jesusleal1999/MESCenter"
+            url="/projects/dummy"
           />
         </div>
       </div>
