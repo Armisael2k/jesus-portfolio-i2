@@ -1,6 +1,7 @@
 import Chip from "@/components/ui/chip";
 import Button from "@/components/ui/button";
 import { PiArrowUpRightBold } from "react-icons/pi";
+import Image from "@/components/ui/image";
 
 interface ProjectProps {
   title: string;
@@ -13,13 +14,13 @@ interface ProjectProps {
 export default function Project({ title, description, image, tags, url }: ProjectProps) {
   return (
     <div className="rounded-xl bg-ctp-crust p-6">
-      <a href={url} className="block overflow-hidden rounded-xl cursor-pointer">
-        <img
-          className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-          src={image}
-          alt={title}
-        />
-      </a>
+      <Image
+        as="a"
+        href={url}
+        containerClassName="block cursor-pointer"
+        src={image}
+        alt={title}
+      />
       <p className="font-medium text-2xl text-ctp-text mt-3 mb-2">{title}</p>
       <p className="text-ctp-subtext0 mb-3">{description}</p>
       <div className="flex gap-2">

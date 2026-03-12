@@ -1,4 +1,5 @@
 import { Link } from "@/components/ui/link";
+import contact from "@/data/contact";
 
 export default function Topbar() {
   return (
@@ -11,7 +12,7 @@ export default function Topbar() {
         <div className="text-ctp-text flex gap-18">
           <Link href="/">home</Link>
           <Link href="/projects">projects</Link>
-          <Link href="mailto:chuylopez755@gmail.com">contact</Link>
+          <Link href={`mailto:${contact.email}`}>contact</Link>
         </div>
       </div>
     </div>
