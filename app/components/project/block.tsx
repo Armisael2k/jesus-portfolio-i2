@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { cn } from "@/utils/cn";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 interface BlockProps {
   title: string;
@@ -20,11 +21,18 @@ export default function Block({ title, className, children, image, imageAlt = ""
         </div>
         {image &&
           <div className="w-2/5 aspect-video overflow-hidden rounded-xl">
-            <img
-              className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-              src={image}
-              alt={imageAlt}
-            />
+            <PhotoProvider>
+              <PhotoView
+                src={image}
+              >
+                <img
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                  src={image}
+                  alt={imageAlt}
+                />
+
+              </PhotoView>
+            </PhotoProvider>
           </div>
         }
       </div>

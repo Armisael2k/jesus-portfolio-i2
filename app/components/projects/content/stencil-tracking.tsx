@@ -19,7 +19,6 @@ export default function StencilTracking() {
       <div className="flex flex-col gap-16">
         <Block title="Context & Motivation" image={gallery[0]}>
           <p>In PCB manufacturing, stencils are used to apply solder paste onto boards before components are placed. After extended use they must be cleaned to remove residue that can cause soldering defects. Before this system, stencil usage was not reliably tracked, making it difficult to ensure proper cleaning cycles.</p>
-
           <p>The Stencil Tracking System monitors stencil usage in real time and enforces return and cleaning cycles through automated alerts. By tracking checkout times and notifying supervisors when stencils are overdue, the system improves accountability and helps prevent defects that lead to production scrap.</p>
         </Block>
         <Block

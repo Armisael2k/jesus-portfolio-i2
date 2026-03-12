@@ -4,6 +4,7 @@ import Project from "@/components/projects/project";
 import SimpleProject from "@/components/projects/simple-project";
 import Layout from "@/components/layout";
 import { projects } from "@/data/projects";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -37,17 +38,19 @@ export default function Projects() {
 
       <section>
         <h2 className="text-ctp-text text-2xl font-semibold mb-6">Other Projects</h2>
-        <div className="grid grid-cols-3 gap-4">
-          {otherProjects.map((project) => (
-            <SimpleProject
-              key={project.title}
-              title={project.title}
-              description={project.description}
-              image={project.img}
-              tags={project.tags}
-            />
-          ))}
-        </div>
+        <PhotoProvider>
+          <div className="grid grid-cols-3 gap-4">
+            {otherProjects.map((project) => (
+              <SimpleProject
+                key={project.title}
+                title={project.title}
+                description={project.description}
+                image={project.img}
+                tags={project.tags}
+              />
+            ))}
+          </div>
+        </PhotoProvider>
       </section>
     </Layout>
   );

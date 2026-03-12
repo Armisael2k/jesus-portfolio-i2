@@ -5,6 +5,7 @@ import Image from "@/components/ui/image";
 import image0 from "@/assets/images/jidoka-report-0.png";
 import image1 from "@/assets/images/jidoka-report-1.png";
 import image2 from "@/assets/images/jidoka-report-2.png";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 const techStack = ["C#", "ASP.NET", "React", "Oracle", "MUI", "ApexCharts", "XLSX"];
 const gallery = [image0, image1, image2];
@@ -53,11 +54,18 @@ export default function JidokaReport() {
           <Block
             title="Gallery"
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {gallery.slice(1).map((image) => (
-                <Image key={image} src={image} containerClassName="aspect-video" />
-              ))}
-            </div>
+            <PhotoProvider>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {gallery.slice(1).map((image) => (
+                  <PhotoView
+                    key={image}
+                    src={image}
+                  >
+                    <Image src={image} containerClassName="aspect-video" />
+                  </PhotoView>
+                ))}
+              </div>
+            </PhotoProvider>
           </Block>
         }
       </div>
