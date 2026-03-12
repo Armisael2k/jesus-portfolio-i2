@@ -9,6 +9,8 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 import 'react-photo-view/dist/react-photo-view.css';
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 
 export const links: Route.LinksFunction = () => [
@@ -37,6 +39,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
