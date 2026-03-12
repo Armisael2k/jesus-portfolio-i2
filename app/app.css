@@ -16,9 +16,10 @@ body {
 
 
 .bg-topbar {
+  -webkit-mask: linear-gradient(black, black, transparent);
   mask: linear-gradient(black, black, transparent);
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 @theme {

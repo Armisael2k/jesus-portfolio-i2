@@ -1,5 +1,6 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 import { cn } from "@/utils/cn";
+import { Link as RouterLink } from "react-router";
 
 type ButtonVariant = "outlined" | "filled" | "shimmer";
 type ButtonColor = "red" | "default";
@@ -9,7 +10,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   color?: ButtonColor;
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
-  href?: string;
+  to?: string;
   target?: string;
 }
 
@@ -37,7 +38,7 @@ export default function Button({
   leftIcon,
   rightIcon,
   children,
-  href,
+  to,
   ...props
 }: ButtonProps) {
   const commonClasses = cn(
@@ -46,13 +47,13 @@ export default function Button({
     className
   );
 
-  if (href) {
+  if (to) {
     return (
-      <a href={href} className={commonClasses} {...(props as any)}>
+      <RouterLink to={to} className={commonClasses} {...(props as any)}>
         {leftIcon && <span className="shrink-0">{leftIcon}</span>}
         {children}
         {rightIcon && <span className="shrink-0">{rightIcon}</span>}
-      </a>
+      </RouterLink>
     );
   }
 

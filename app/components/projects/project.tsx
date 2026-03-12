@@ -2,6 +2,7 @@ import Chip from "@/components/ui/chip";
 import Button from "@/components/ui/button";
 import { PiArrowUpRightBold } from "react-icons/pi";
 import Image from "@/components/ui/image";
+import { Link as RouterLink } from "react-router"
 
 interface ProjectProps {
   title: string;
@@ -15,8 +16,8 @@ export default function Project({ title, description, image, tags, url }: Projec
   return (
     <div className="rounded-xl bg-ctp-crust p-6">
       <Image
-        as="a"
-        href={url}
+        as={RouterLink}
+        to={url}
         containerClassName="block cursor-pointer"
         src={image}
         alt={title}
@@ -35,11 +36,11 @@ export default function Project({ title, description, image, tags, url }: Projec
           ))}
         </div>
         {url && (
-          <a href={url}>
+          <RouterLink to={url}>
             <Button variant="filled" color="red" className="w-16 h-16">
               <PiArrowUpRightBold className="size-5" />
             </Button>
-          </a>
+          </RouterLink>
         )}
       </div>
     </div>

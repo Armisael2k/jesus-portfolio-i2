@@ -4,7 +4,7 @@ import { cn } from "@/utils/cn";
 export interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
   containerClassName?: string;
   as?: ElementType;
-  href?: string;
+  to?: string;
   target?: string;
 }
 
@@ -13,13 +13,13 @@ export default function Image({
   containerClassName,
   as: Component = "div",
   alt = "",
-  href,
+  to,
   target,
   ...props
 }: ImageProps) {
   return (
     <Component
-      href={href}
+      to={to}
       target={target}
       className={cn("overflow-hidden rounded-xl", containerClassName)}
     >
