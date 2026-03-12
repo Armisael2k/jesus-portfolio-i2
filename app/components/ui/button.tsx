@@ -9,6 +9,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   color?: ButtonColor;
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
+  href?: string;
+  target?: string;
 }
 
 const colorMap: Record<ButtonColor, Record<ButtonVariant, string>> = {
@@ -35,17 +37,27 @@ export default function Button({
   leftIcon,
   rightIcon,
   children,
+  href,
   ...props
 }: ButtonProps) {
+  const commonClasses = cn(
+    colorMap[color][variant],
+    "inline-flex items-center justify-center gap-2 rounded-xl hover:scale-[102%] transition-all ease-in-out duration-300 cursor-pointer px-4 py-2",
+    className
+  );
+
+  if (href) {
+    return (
+      <a href={href} className={commonClasses} {...(props as any)}>
+        {leftIcon && <span className="shrink-0">{leftIcon}</span>}
+        {children}
+        {rightIcon && <span className="shrink-0">{rightIcon}</span>}
+      </a>
+    );
+  }
+
   return (
-    <button
-      className={cn(
-        colorMap[color][variant],
-        "inline-flex items-center justify-center gap-2 rounded-xl hover:scale-[102%] transition-all ease-in-out duration-300 cursor-pointer px-4 py-2",
-        className
-      )}
-      {...props}
-    >
+    <button className={commonClasses} {...props}>
       {leftIcon && <span className="shrink-0">{leftIcon}</span>}
       {children}
       {rightIcon && <span className="shrink-0">{rightIcon}</span>}
