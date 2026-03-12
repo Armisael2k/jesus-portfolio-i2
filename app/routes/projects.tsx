@@ -4,7 +4,7 @@ import Project from "@/components/projects/project";
 import SimpleProject from "@/components/projects/simple-project";
 import Layout from "@/components/layout";
 import { projects } from "@/data/projects";
-import { PhotoProvider, PhotoView } from 'react-photo-view';
+import { PhotoProvider } from 'react-photo-view';
 
 export function meta({ }: Route.MetaArgs) {
   return [

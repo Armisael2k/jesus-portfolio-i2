@@ -2,9 +2,9 @@ import Title from "@/components/ui/title";
 import Block from "@/components/project/block";
 import Chip from "@/components/ui/chip";
 import Image from "@/components/ui/image";
-import image0 from "@/assets/images/jidoka-report-0.png";
-import image1 from "@/assets/images/jidoka-report-1.png";
-import image2 from "@/assets/images/jidoka-report-2.png";
+import image0 from "@/assets/images/jidoka-report-0.jpg";
+import image1 from "@/assets/images/jidoka-report-1.jpg";
+import image2 from "@/assets/images/jidoka-report-2.jpg";
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 const techStack = ["C#", "ASP.NET", "React", "Oracle", "MUI", "ApexCharts", "XLSX"];

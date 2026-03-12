@@ -2,8 +2,8 @@ import Title from "@/components/ui/title";
 import Block from "@/components/project/block";
 import Chip from "@/components/ui/chip";
 import Image from "@/components/ui/image";
-import image0 from "@/assets/images/stencil-tracking-0.png";
-import image1 from "@/assets/images/stencil-tracking-1.png";
+import image0 from "@/assets/images/stencil-tracking-0.jpg";
+import image1 from "@/assets/images/stencil-tracking-1.jpg";
 
 const techStack = ["C#", "ASP.NET", "React", "SQL Server", "Hero UI", "Typescript", "Tailwindcss", "Apexcharts", "XLSX"];
 const gallery = [image0, image1];
