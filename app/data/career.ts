@@ -11,14 +11,14 @@ export const experience: CareerEntry[] = [
     title: "MES Fullstack Developer",
     place: "Continental Automotive",
     description:
-      "Developed internal MES tools for production environments using C#, .NET, React, Node.js, and SQL Server. Rebuilt the Jidoka reporting system improving accuracy by 62%, built APIs for real-time production alerts, and automated operational tasks across the manufacturing floor.",
+      "Developed internal MES tools for high-volume manufacturing using C#, .NET, React, and SQL/Oracle/Mongo. Rebuilt the Jidoka reporting system improving event accuracy by 62%, and created automation and APIs for real-time production monitoring.",
   },
   {
     date: "Aug 2022 - Dec 2022",
     title: "Web Developer Intern",
     place: "Continental Automotive",
     description:
-      "Developed a web application for the returns laboratory using React, Next.js, and SQL Server. Automated report generation and replaced manual Excel tracking with a centralized web system.",
+      "Developed a web application for the returns laboratory using React, Next.js, and SQL Server, replacing manual Excel tracking and automating report generation."
   },
 ];
 
