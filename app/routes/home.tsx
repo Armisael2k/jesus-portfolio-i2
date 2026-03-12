@@ -16,7 +16,7 @@ export function meta({ }: Route.MetaArgs) {
 export default function Home() {
   return (
     <Layout>
-      <div className="flex justify-between">
+      <div className="flex flex-col md:flex-row md:justify-between gap-12">
         <div>
           <Presentation />
           <SocialLinks />

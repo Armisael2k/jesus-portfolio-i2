@@ -22,7 +22,7 @@ export default function Projects() {
       <section className="mb-12">
         <Title title="Featured Projects" />
         <h2 className="text-ctp-text text-2xl font-semibold mb-6"></h2>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {featuredProjects.map((project) => (
             <Project
               key={project.title}
@@ -39,7 +39,7 @@ export default function Projects() {
       <section>
         <h2 className="text-ctp-text text-2xl font-semibold mb-6">Other Projects</h2>
         <PhotoProvider>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {otherProjects.map((project) => (
               <SimpleProject
                 key={project.title}

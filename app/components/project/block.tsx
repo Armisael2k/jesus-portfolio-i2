@@ -15,12 +15,12 @@ export default function Block({ title, className, children, image, imageAlt = ""
   return (
     <div className={className}>
       <p className="text-ctp-text text-xl font-light mb-4">{title}</p>
-      <div className={`flex gap-8 ${reverse ? "flex-row-reverse" : "flex-row"}`}>
-        <div className={cn("w-full flex flex-col gap-3 text-ctp-subtext0", image && "w-3/5")}>
+      <div className={cn("flex flex-col gap-8", reverse ? "md:flex-row-reverse" : "md:flex-row")}>
+        <div className={cn("w-full flex flex-col gap-3 text-ctp-subtext0", image && "md:w-3/5")}>
           {children}
         </div>
         {image &&
-          <div className="w-2/5 aspect-video overflow-hidden rounded-xl">
+          <div className="w-full md:w-2/5 aspect-video overflow-hidden rounded-xl">
             <PhotoProvider>
               <PhotoView
                 src={image}

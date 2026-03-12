@@ -13,7 +13,7 @@ export default function Layout({ children, contained = true }: LayoutProps) {
       <Background />
       <Topbar />
       {contained ? (
-        <div className="max-w-5xl mx-auto pt-16 pb-20 relative">
+        <div className="max-w-5xl mx-auto px-6 pt-16 pb-20 relative">
           {children}
         </div>
       ) : (

@@ -12,7 +12,7 @@ const gallery = [image0, image1, image2];
 
 export default function MssFlow() {
   return (
-    <div className="max-w-5xl mx-auto pt-16 pb-20 relative">
+    <div className="max-w-5xl mx-auto px-6 pt-16 pb-20 relative">
       <Title
         title="MSS Flow"
         description="A visual tool that automates complex unit movement workflows in MES systems."
@@ -29,7 +29,7 @@ export default function MssFlow() {
         <Block
           title="Technologies Used"
         >
-          <div className="flex gap-1">
+          <div className="flex flex-wrap gap-1">
             {techStack.map((tech) => (
               <Chip key={tech} label={tech} />
             ))}

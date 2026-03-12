@@ -10,7 +10,7 @@ const gallery = [image0, image1];
 
 export default function StencilTracking() {
   return (
-    <div className="max-w-5xl mx-auto pt-16 pb-20 relative">
+    <div className="max-w-5xl mx-auto px-6 pt-16 pb-20 relative">
       <Title
         title="Stencil Tracking"
         description="A tracking system that monitors stencil usage and enforces timely cleaning to prevent soldering defects."
@@ -24,7 +24,7 @@ export default function StencilTracking() {
         <Block
           title="Technologies Used"
         >
-          <div className="flex gap-1">
+          <div className="flex flex-wrap gap-1">
             {techStack.map((tech) => (
               <Chip key={tech} label={tech} />
             ))}

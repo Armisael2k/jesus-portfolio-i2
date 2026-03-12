@@ -4,7 +4,7 @@ import { HiOutlineSquare3Stack3D, HiOutlineDocumentArrowDown, HiOutlineEnvelope 
 
 export default function Actions() {
   return (
-    <div className="flex gap-4 mt-7">
+    <div className="flex flex-col sm:flex-row gap-4 mt-7">
       <Button variant="filled" color="red" rightIcon={<HiOutlineSquare3Stack3D className="size-5" />}>
         View Projects
       </Button>

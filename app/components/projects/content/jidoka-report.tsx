@@ -12,7 +12,7 @@ const gallery = [image0, image1, image2];
 
 export default function JidokaReport() {
   return (
-    <div className="max-w-5xl mx-auto pt-16 pb-20 relative">
+    <div className="max-w-5xl mx-auto px-6 pt-16 pb-20 relative">
       <Title
         title="Jidoka Report"
         description="A reporting system that improves accuracy of automated defect detection events in manufacturing lines."
@@ -26,7 +26,7 @@ export default function JidokaReport() {
         <Block
           title="Technologies Used"
         >
-          <div className="flex gap-1">
+          <div className="flex flex-wrap gap-1">
             {techStack.map((tech) => (
               <Chip key={tech} label={tech} />
             ))}

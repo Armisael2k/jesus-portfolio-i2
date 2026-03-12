@@ -10,7 +10,7 @@ const gallery = [image0, image1];
 
 export default function ContiBeatAPI() {
   return (
-    <div className="max-w-5xl mx-auto pt-16 pb-20 relative">
+    <div className="max-w-5xl mx-auto px-6 pt-16 pb-20 relative">
       <Title
         title="ContiBeat API"
         description="A custom API that restored real-time production alerts after corporate restrictions blocked Telegram integrations."
@@ -24,7 +24,7 @@ export default function ContiBeatAPI() {
         <Block
           title="Technologies Used"
         >
-          <div className="flex gap-1">
+          <div className="flex flex-wrap gap-1">
             {techStack.map((tech) => (
               <Chip key={tech} label={tech} />
             ))}
