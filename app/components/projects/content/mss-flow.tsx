@@ -23,8 +23,8 @@ export default function MssFlow() {
           title="Context & Motivation"
           image={gallery[0]}
         >
-          <p>In manufacturing environments, Jidoka systems automatically stop production lines when defects are detected, generating events used for quality analysis and audits. The previous reporting system did not properly account for repeated blocking events or multi-board PCB panels, which led to inaccurate defect reporting.</p>
-          <p>Because the central Jidoka system synchronizes across multiple databases, certain scenarios could generate duplicated or overlapping events that inflated defect counts. Jidoka Report introduces validation and event-grouping logic to consolidate overlapping blocks and provide more accurate production line metrics.</p>
+          <p>MES engineers often need to perform complex unit movements between production processes. Previously this required multiple disconnected tools such as standalone executables, scripts, and database queries, making the workflow highly manual and dependent on individual experience.</p>
+          <p>Requests arrived through an eSign system containing lists of unit serial numbers that engineers had to analyze across multiple systems before executing the required movements. MSS Flow centralizes this workflow into a visual platform that automates data collection, validates operations, and executes movements while keeping a complete history of all actions performed.</p>
         </Block>
         <Block
           title="Technologies Used"
