@@ -70,3 +70,12 @@ body {
     }
   }
 }
+
+.btn-primary {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(236, 109, 132, 0.4);
+}

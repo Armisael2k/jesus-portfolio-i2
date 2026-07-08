@@ -1,5 +1,5 @@
 import Button from "@/components/ui/button";
-import { HiOutlineSquare3Stack3D, HiOutlineDocumentArrowDown, HiOutlineEnvelope } from "react-icons/hi2";
+import { HiArrowSmallRight, HiOutlineDocumentArrowDown, HiOutlineEnvelope } from "react-icons/hi2";
 import contact from "@/data/contact";
 
 export default function Actions() {
@@ -9,10 +9,10 @@ export default function Actions() {
         to="/projects"
         variant="filled"
         color="red"
-        className="animate-project-cta-pulse"
-        rightIcon={<HiOutlineSquare3Stack3D className="size-5" />}
+        className="animate-project-cta-pulse btn-primary"
+        rightIcon={<HiArrowSmallRight className="size-5" />}
       >
-        View Projects
+        See My Work
       </Button>
       <a href="/Jesus Leal Resume.pdf">
         <Button variant="filled" color="default" rightIcon={<HiOutlineDocumentArrowDown className="size-5" />}>
