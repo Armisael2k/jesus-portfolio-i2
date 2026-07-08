@@ -5,7 +5,13 @@ import contact from "@/data/contact";
 export default function Actions() {
   return (
     <div className="flex flex-col sm:flex-row gap-4 mt-7">
-      <Button to="/projects" variant="filled" color="red" rightIcon={<HiOutlineSquare3Stack3D className="size-5" />}>
+      <Button
+        to="/projects"
+        variant="filled"
+        color="red"
+        className="animate-project-cta-pulse"
+        rightIcon={<HiOutlineSquare3Stack3D className="size-5" />}
+      >
         View Projects
       </Button>
       <a href="/Jesus Leal Resume.pdf">

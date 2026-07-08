@@ -53,4 +53,20 @@ body {
       opacity: 0;
     }
   }
+
+  --animate-project-cta-pulse: project-cta-pulse 2.4s ease-in-out infinite;
+
+  @keyframes project-cta-pulse {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.055);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
 }
