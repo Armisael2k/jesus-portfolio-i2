@@ -15,7 +15,7 @@ export default function MssFlow() {
     <div className="max-w-5xl mx-auto px-6 pt-16 pb-20 relative">
       <Title
         title="MSS Flow"
-        description="A visual tool that automates complex unit movement workflows in MES systems."
+        description="A visual platform that centralizes MES tools, scripts, and data collection to validate and execute complex unit movements."
         descriptionClassName="font-light"
       />
       <div className="flex flex-col gap-16">
@@ -41,6 +41,7 @@ export default function MssFlow() {
           reverse={true}
         >
           <ul className="list-disc pl-6 space-y-2">
+            <li>Centralized multiple MES tools, scripts, and database queries into a single workflow system.</li>
             <li>Visual node-based editor for designing MES unit movement flows.</li>
             <li>Automatic extraction of unit serials from eSign attachments.</li>
             <li>Automated data collection from multiple MES systems.</li>

@@ -13,13 +13,13 @@ export default function ContiBeatAPI() {
     <div className="max-w-5xl mx-auto px-6 pt-16 pb-20 relative">
       <Title
         title="ContiBeat API"
-        description="A custom API that restored real-time production alerts after corporate restrictions blocked Telegram integrations."
+        description="A custom REST API created after Telegram integrations were blocked, restoring automated production alerts through ContiBeat."
         descriptionClassName="font-light"
       />
       <div className="flex flex-col gap-16">
         <Block title="Context & Motivation" image={gallery[0]}>
           <p>Telegram was originally used to deliver automated production alerts. When the company replaced it with an internal messaging platform called ContiBeat, the new system did not provide an API, preventing existing tools from sending notifications.</p>
-          <p>To restore automated alerts, a custom ContiBeat API was developed using reverse engineering of the application's network requests. This allowed existing systems to send messages with minimal changes and restored real-time production notifications.</p>
+          <p>To restore automated alerts, a custom REST API was developed through reverse engineering of the application's network requests. This allowed existing systems to send messages with minimal changes and restored automated production notifications.</p>
         </Block>
         <Block
           title="Technologies Used"
@@ -41,7 +41,7 @@ export default function ContiBeatAPI() {
             <li>Compatible request structure for easy migration from Telegram integrations.</li>
             <li>Token-based authentication for secure message sending.</li>
             <li>Real-time message delivery using WebSocket connections.</li>
-            <li>Integration with MES and production monitoring systems.</li>
+            <li>Restored production alerting without requiring major changes to existing monitoring tools.</li>
           </ul>
         </Block>
         {gallery.length > 2 &&

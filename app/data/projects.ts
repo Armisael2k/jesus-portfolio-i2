@@ -13,6 +13,8 @@ import MssFlow from "@/components/projects/content/mss-flow";
 import ContiBeatAPI from "@/components/projects/content/contibeat-api";
 import StencilTracking from "@/components/projects/content/stencil-tracking";
 import JidokaReport from "@/components/projects/content/jidoka-report";
+import Centinela from "@/components/projects/content/centinela";
+import JidokaUnlock from "@/components/projects/content/jidoka-unlock";
 
 export type ProjectEntry = {
   title: string;
@@ -30,7 +32,7 @@ export const projects: ProjectEntry[] = [
   {
     title: "MSS Flow",
     description:
-      "Visual workflow platform for analyzing and executing complex MES unit movements.",
+      "Visual platform that centralizes MES tools, scripts, and data collection to execute complex unit movements.",
     tags: ["C#", "ASP.NET", "React", "MongoDB", "Oracle", "React Flow", "MUI", "Reverse Engineering", "XLSX"],
     img: mssFlowImg,
     url: "/projects/mss-flow",
@@ -38,19 +40,19 @@ export const projects: ProjectEntry[] = [
     featured: true,
   },
   {
-    title: "ContiBeat API",
+    title: "Centinela",
     description:
-      "Custom API built through reverse engineering to enable automated messaging in ContiBeat.",
-    tags: ["C#", ".NET", "REST API", "SignalR", "Reverse Engineering"],
-    img: contiBeatImg,
-    url: "/projects/contibeat-api",
-    content: ContiBeatAPI,
+      "Monitoring and auto-recovery service for critical applications running across manufacturing networks.",
+    tags: ["C#", ".NET", "ASP.NET", "React", "WPF", "TCP/IP"],
+    img: centinelImg,
+    url: "/projects/centinela",
+    content: Centinela,
     featured: true,
   },
   {
     title: "Stencil Tracking",
     description:
-      "System that tracks stencil usage and enforces cleaning cycles to prevent soldering defects.",
+      "Full-stack system for stencil checkout, return, cleaning cycles, and supervisor alerts in PCB production.",
     tags: ["C#", "ASP.NET", "React", "SQL Server", "Hero UI", "TypeScript", "Tailwind", "ApexCharts", "XLSX"],
     img: stencilTrackingImg,
     url: "/projects/stencil-tracking",
@@ -60,7 +62,7 @@ export const projects: ProjectEntry[] = [
   {
     title: "Jidoka Report",
     description:
-      "Analytics dashboard that improves accuracy of Jidoka stoppage reporting in manufacturing lines.",
+      "Reporting dashboard for Jidoka production stoppages, improving event accuracy by 62%.",
     tags: ["C#", "ASP.NET", "React", "Oracle", "MUI", "ApexCharts", "XLSX"],
     img: jidokaReportImg,
     url: "/projects/jidoka-report",
@@ -68,28 +70,24 @@ export const projects: ProjectEntry[] = [
     featured: true,
   },
   {
-    title: "Centinela",
+    title: "Jidoka Unlock",
     description:
-      "Monitoring service that detects failures and automatically restarts critical server applications.",
-    tags: ["C#", ".NET", "ASP.NET", "React", "WPF", "TCP/IP"],
-    img: centinelImg,
-    url: "/projects/centinela",
+      "Controlled web tool for safely unlocking MES stations blocked by Jidoka events.",
+    tags: ["C#", "ASP.NET", "React", "Oracle", "Puppeteer", "MUI"],
+    img: jidokaUnlockImg,
+    url: "/projects/jidoka-unlock",
+    content: JidokaUnlock,
+    featured: true,
   },
   {
-    title: "KDM Alerts",
+    title: "ContiBeat API",
     description:
-      "Alerting system that monitors key inventory levels and triggers automated notifications.",
-    tags: ["C#", "ASP.NET", "React", "Oracle", "Puppeteer", "Reverse Engineering"],
-    img: kdmAlertImg,
-    url: "/projects/kdm-alerts",
-  },
-  {
-    title: "WIP Movements",
-    description:
-      "Secure interface for managing Work-In-Progress unit movements within MES environments.",
-    tags: ["C#", "ASP.NET", "React", "Oracle", "MUI"],
-    img: wipMovementImg,
-    url: "/projects/wip-movements",
+      "Custom REST API created after Telegram integrations were blocked, restoring automated alerts through ContiBeat.",
+    tags: ["C#", ".NET", "REST API", "SignalR", "Reverse Engineering"],
+    img: contiBeatImg,
+    url: "/projects/contibeat-api",
+    content: ContiBeatAPI,
+    featured: true,
   },
   {
     title: "Inventory",
@@ -100,12 +98,12 @@ export const projects: ProjectEntry[] = [
     url: "/projects/inventory",
   },
   {
-    title: "Jidoka Unlock",
+    title: "WIP Movements",
     description:
-      "Web interface that allows operators to safely unlock MES stations blocked by Jidoka events.",
-    tags: ["C#", "ASP.NET", "React", "Oracle", "Puppeteer", "MUI"],
-    img: jidokaUnlockImg,
-    url: "/projects/jidoka-unlock",
+      "Secure interface for managing Work-In-Progress unit movements within MES environments.",
+    tags: ["C#", "ASP.NET", "React", "Oracle", "MUI"],
+    img: wipMovementImg,
+    url: "/projects/wip-movements",
   },
   {
     title: "Radmin Automation",
@@ -122,5 +120,13 @@ export const projects: ProjectEntry[] = [
     tags: ["C#", ".NET", "WinForms", "Cognex", "COM", "TCP/IP"],
     img: dualScannerImg,
     url: "/projects/dual-scanner",
+  },
+  {
+    title: "KDM Alerts",
+    description:
+      "Alerting system that monitors key inventory levels and triggers automated notifications.",
+    tags: ["C#", "ASP.NET", "React", "Oracle", "Puppeteer", "Reverse Engineering"],
+    img: kdmAlertImg,
+    url: "/projects/kdm-alerts",
   },
 ];

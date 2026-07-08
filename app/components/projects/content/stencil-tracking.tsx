@@ -13,7 +13,7 @@ export default function StencilTracking() {
     <div className="max-w-5xl mx-auto px-6 pt-16 pb-20 relative">
       <Title
         title="Stencil Tracking"
-        description="A tracking system that monitors stencil usage and enforces timely cleaning to prevent soldering defects."
+        description="A stencil lifecycle system for PCB production, built to improve traceability and reduce scrap caused by missed cleaning cycles."
         descriptionClassName="font-light"
       />
       <div className="flex flex-col gap-16">
@@ -42,7 +42,13 @@ export default function StencilTracking() {
             <li>Operator and production line tracking for each stencil checkout.</li>
             <li>Daily, weekly, and monthly usage reports.</li>
             <li>Analytics dashboard showing on-time return rate.</li>
+            <li>Traceability records for stencil lending, return, cleaning status, and responsible production areas.</li>
           </ul>
+        </Block>
+        <Block title="Impact">
+          <p>
+            Improved stencil traceability and helped reduce manufacturing scrap risk by enforcing cleaning intervals, overdue alerts, and supervisor visibility across production areas.
+          </p>
         </Block>
         {gallery.length > 2 &&
           <Block
