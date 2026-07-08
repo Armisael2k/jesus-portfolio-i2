@@ -50,6 +50,19 @@ export default function MssFlow() {
           </ul>
         </Block>
         <Block
+          title="Demo"
+        >
+          <div className="aspect-video w-full overflow-hidden rounded-xl border border-ctp-surface0 bg-ctp-crust">
+            <iframe
+              className="h-full w-full"
+              src="https://www.youtube.com/embed/oKmbEwXc7E0"
+              title="MSS Flow demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </Block>
+        <Block
           title="Gallery"
         >
           <PhotoProvider>
